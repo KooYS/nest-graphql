@@ -1,0 +1,12 @@
+scalar Date
+
+type Todo {
+    id: ID
+    title: String
+    description: String
+    deadline: Date
+}
+
+type Query {
+  findAll: [Todo]
+}
