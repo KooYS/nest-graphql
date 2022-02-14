@@ -1,0 +1,22 @@
+scalar Date
+
+type Todo {
+    id: ID
+    title: String
+    description: String
+    deadline: Date
+}
+
+type Query {
+  findAll: [Todo]
+}
+
+input CreateTodoInput {
+  title: String!
+  description: String!
+  deadline: Date
+}
+
+type Mutation {
+  addTodo(todo: CreateTodoInput): Todo
+}

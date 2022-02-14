@@ -1,6 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-
 @Entity()
 export class Todo {
     @PrimaryGeneratedColumn()
@@ -14,4 +13,10 @@ export class Todo {
 
     @Column()
     deadline : Date
+}
+
+export class CreateTodoInput {
+    title: string
+    description: string
+    deadline: Date
 }
