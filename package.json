@@ -6,11 +6,5 @@
   "scripts": {
     "prepare": "husky install",
     "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "npm run format",
-      "npm run lint"
-    ]
   }
 }
