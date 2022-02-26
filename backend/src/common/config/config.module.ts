@@ -5,7 +5,9 @@ import * as Joi from 'joi';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true, validationSchema: Joi.object({
+    ConfigModule.forRoot({
+      isGlobal: true,
+      validationSchema: Joi.object({
         DB_HOST: Joi.string().required(),
         DB_PORT: Joi.string().required(),
         DB_USERNAME: Joi.string().required(),
