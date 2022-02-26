@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 cd ./frontend/todolist && npx lint-staged
-cd ../../backend && npm run lint 
+cd ../../backend && npx lint-staged 
