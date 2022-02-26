@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { CommonConfigModule } from './common/config/config.module';
 import { TodoModule } from './todo/todo.module';
 import { GraphQLModule } from '@nestjs/graphql';
-
+import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     CommonConfigModule,
