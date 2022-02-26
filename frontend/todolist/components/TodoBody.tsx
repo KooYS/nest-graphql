@@ -3,6 +3,7 @@ import { styled } from '@mui/system'
 
 type Props = {
 	children: React.ReactNode
+	title: string
 }
 
 const TodoBodyStyle = styled('div')`
@@ -20,10 +21,24 @@ const TodoBodyStyle = styled('div')`
 	margin-bottom: 32px;
 	display: flex;
 	flex-direction: column;
+
+	& > h2 
 `
 
-const TodoBody: React.FC<Props> = ({ children }) => {
-	return <TodoBodyStyle>{children}</TodoBodyStyle>
+const TodoTitle = styled('h2')`
+	text-align: center;
+	padding: 60px 0;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #e9ecef;
+`
+
+const TodoBody: React.FC<Props> = ({ title, children }) => {
+	return (
+		<TodoBodyStyle>
+			<TodoTitle>{title}</TodoTitle>
+			{children}
+		</TodoBodyStyle>
+	)
 }
 
 export default TodoBody
