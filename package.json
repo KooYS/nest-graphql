@@ -10,7 +10,8 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
       "npm run format",
-      "eslint --fix"
+      "npm run lint",
+      "git add"
     ]
   }
 }
