@@ -5,7 +5,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install",
+		"precommit": "lint-staged"
+    
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",

@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd ./frontend/todolist && npx lint-staged
+cd ./frontend/todolist && npm run lint --fix
 cd ../../backend && npx lint-staged 
