@@ -5,14 +5,16 @@ import { CreateTodoInput, Todo } from './entities/todo.entity';
 
 @Injectable()
 export class TodoService {
-  constructor(@InjectRepository(Todo) private readonly todo : Repository<Todo>) {}
-  
-  findAll(){
-    return this.todo.find()
+  constructor(
+    @InjectRepository(Todo) private readonly todo: Repository<Todo>,
+  ) {}
+
+  findAll() {
+    return this.todo.find();
   }
 
-  addTodo(todo : CreateTodoInput){
-    console.log(todo)
-    return this.todo.save(this.todo.create(todo))
+  addTodo(todo: CreateTodoInput) {
+    console.log(todo);
+    return this.todo.save(this.todo.create(todo));
   }
 }

@@ -5,7 +5,7 @@ import { TodoResolver } from './resolver/todo.resolver';
 import { TodoService } from './todo.service';
 
 @Module({
-    imports : [TypeOrmModule.forFeature([Todo])],
-    providers: [TodoResolver, TodoService],
+  imports: [TypeOrmModule.forFeature([Todo])],
+  providers: [TodoResolver, TodoService],
 })
 export class TodoModule {}
