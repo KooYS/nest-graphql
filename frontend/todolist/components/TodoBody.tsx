@@ -21,8 +21,6 @@ const TodoBodyStyle = styled('div')`
 	margin-bottom: 32px;
 	display: flex;
 	flex-direction: column;
-
-	& > h2 
 `
 
 const TodoTitle = styled('h2')`
