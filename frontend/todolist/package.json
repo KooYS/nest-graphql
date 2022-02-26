@@ -5,8 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format": "prettier --write \"**/*.ts\""
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -27,8 +26,8 @@
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "npm run format",
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }
