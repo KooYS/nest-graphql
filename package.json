@@ -8,6 +8,9 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "**/*.ts": "tsc-files --noEmit"
+    "*.{ts,tsx,js,jsx}": [
+      "npm run format",
+      "npm run lint"
+    ]
   }
 }
